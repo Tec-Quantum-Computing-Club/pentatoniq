@@ -8,7 +8,7 @@ pygame.init()
 
 # Constants
 NOTES = [mixer.Sound("./audio/synth1/" + ii) for ii in listdir("./audio/synth1")]
-BPM = 220
+BPM = 160
 BPS = BPM / 60
 BEATS = 8
 TIME_INTERVAL = 1 / BPS

@@ -24,7 +24,7 @@ def phase_music(iters, basis):
         phase = i * 2 * pi / basis
         qc = QuantumCircuit(7)
         rotations = rotation_circuit(
-            7, [phase, phase / 2, phase / 3, phase / 4, phase / 5, phase / 6]
+            7, [phase / 1, phase / 1, phase / 1, phase / 1, phase / 1, phase / 1]
         )
         duration = duration_gate()
 
@@ -42,7 +42,7 @@ def phase_music(iters, basis):
     player(measures)
 
 
-def entanglement_music(iters):
+def entanglement_music_1(iters):
     svsim = Aer.get_backend("aer_simulator")
 
     measures = []
@@ -54,6 +54,60 @@ def entanglement_music(iters):
         qc = qc.compose(duration, 6)
         time_circuit = superpose_qutrit(1, 0, 0)
         note_circuit = superpose_qutrit(1, 0, 0)
+
+        qc = qc.compose(time_circuit, [0, 1, 2]).compose(note_circuit, [3, 4, 5])
+
+        qc.save_statevector()
+        qobj = assemble(qc)
+        result = svsim.run(qobj).result()
+        hist = result.get_counts()
+
+        notes, beats = extract_music(hist)
+
+        measures.append([notes, beats])
+
+    player(measures)
+
+
+def entanglement_music_2(iters):
+    svsim = Aer.get_backend("aer_simulator")
+
+    measures = []
+
+    for i in range(iters):
+        qc = QuantumCircuit(7)
+        duration = duration_gate()
+
+        qc = qc.compose(duration, 6)
+        time_circuit = superpose_qutrit(0, 1, 0)
+        note_circuit = superpose_qutrit(0, 1, 0)
+
+        qc = qc.compose(time_circuit, [0, 1, 2]).compose(note_circuit, [3, 4, 5])
+
+        qc.save_statevector()
+        qobj = assemble(qc)
+        result = svsim.run(qobj).result()
+        hist = result.get_counts()
+
+        notes, beats = extract_music(hist)
+
+        measures.append([notes, beats])
+
+    player(measures)
+
+
+def entanglement_music_3(iters):
+    svsim = Aer.get_backend("aer_simulator")
+
+    measures = []
+
+    for i in range(iters):
+        qc = QuantumCircuit(7)
+        duration = duration_gate()
+
+        qc = qc.compose(duration, 6)
+        time_circuit = superpose_qutrit(0, 0, 1)
+        note_circuit = superpose_qutrit(0, 0, 1)
 
         qc = qc.compose(time_circuit, [0, 1, 2]).compose(note_circuit, [3, 4, 5])
 
