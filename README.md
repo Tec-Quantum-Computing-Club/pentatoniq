@@ -25,6 +25,8 @@ Based on these 4 basic principles, a wide variety of sounds can be generated, wh
 
 ## Files
 
+Audio files are included in the `audio/` folder. You'll find different synth-sounds (self made samples) and the percussion sounds (sampled from an 808-drum machine), but you cand include your own. Try using a different mode or scale!
+
 ## Examples
 
 ## Interesting ideas
