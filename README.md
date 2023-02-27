@@ -1,8 +1,12 @@
 # Pentatoniq
 
+Produce sound through entanglement and rotations. Listen to your quantum circuit's thoughts.
+
 An exploratory proyect for making music with quantum computers.
 
 The idea for this proyect is to be a first approach to making music with quantum computers. Here we explore how phases can create sound, how entanglement might sound, and how randomness can create quantum music.
+
+Inspiration: Quantum Art
 
 ## How it works
 
@@ -24,3 +28,7 @@ Based on these 4 basic principles, a wide variety of sounds can be generated, wh
 ## Interesting ideas
 
 As we explored the working, we found out that entanglement could be a way to play specific notes, as it limits the measurements to only a few possibilities.
+
+## Next
+
+Future features aim to include a melody encoder and decoder.
