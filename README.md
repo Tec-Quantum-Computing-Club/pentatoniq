@@ -1,3 +1,5 @@
+![pentatoniq logo](/media/logo2.png)
+
 # Pentatoniq
 
 Produce sound through entanglement and rotations. Listen to your quantum circuit's thoughts.
