@@ -65,7 +65,11 @@ Audio files are included in the [audio](/audio/) folder. You'll find different s
 On the [pentanoiq](/pentatoniq.ipynb) JupyterNotebook, there are ready examples for you to test out! Otherwise, check out this
 
 
-[![Everything Is AWESOME](http://i.imgur.com/Ot5DWAW.png)](https://youtu.be/byJk92w3AgY "PentatoniQ")
+<iframe width="560" height="315"
+src="https://youtu.be/byJk92w3AgY" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
 
 ## Interesting ideas
 
