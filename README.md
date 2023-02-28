@@ -50,7 +50,7 @@ On the [pentanoiq](/pentatoniq.ipynb) JupyterNotebook, there are ready examples 
 
 ### Entanglement's role in quantum music
 
-As we explored this funny idea, we found out that entanglement could be a way to play specific notes, as it limits the measurements to only a few possibilities. And idea that would bei interesteing to further explore, is how to exploit entanglement to generate music purposely.
+As we explored this funny idea, we found out that entanglement could be a way to play specific notes, as it limits the measurements to only a few possibilities. An idea that would be interesting to further explore, is how to exploit entanglement to generate music purposely.
 
 ### Natural hamiltonian sounds
 
@@ -65,3 +65,7 @@ There could also be research on how machine learning can find quantum algorithms
 ## Next steps
 
 Future features aim to include a melody encoder and decoder.
+
+Try to make "quantum natural" music.
+
+Resarch on how entanglement can create sound.
