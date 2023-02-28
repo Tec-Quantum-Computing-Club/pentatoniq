@@ -62,9 +62,9 @@ Audio files are included in the [audio](/audio/) folder. You'll find different s
 
 ## Examples
 
-On the [pentanoiq](/pentatoniq.ipynb) JupyterNotebook, there are ready examples for you to test out! Otherwise, check out this
+On the [pentanoiq](/pentatoniq.ipynb) JupyterNotebook, there are ready examples for you to test out! Otherwise, check out this youtube demo:
 
-[![IMAGE_ALT](https://img.youtube.com/vi/byJk92w3AgY/0.jpg)](https://www.youtube.com/watch?v=byJk92w3AgY)
+[![IMAGE_ALT](/media/screen.png)](https://www.youtube.com/watch?v=byJk92w3AgY)
 
 ## Interesting ideas
 
