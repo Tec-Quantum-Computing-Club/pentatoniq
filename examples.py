@@ -63,7 +63,7 @@ def entanglement_music_1(iters):
         hist = result.get_counts()
 
         notes, beats = extract_music(hist)
-
+        
         measures.append([notes, beats])
 
     player(measures)
